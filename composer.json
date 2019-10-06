@@ -1,0 +1,44 @@
+{
+  "description": "Open whatever you want, such as URLs, files or executables, regardless of the platform you use.",
+  "homepage": "https://dev.belin.io/open.php",
+  "license": "MIT",
+  "name": "cedx/open",
+  "type": "library",
+  "authors": [
+    {"email": "cedric@belin.io", "homepage": "https://belin.io", "name": "Cédric Belin"}
+  ],
+  "autoload": {
+    "psr-4": {"Open\\": "lib/"}
+  },
+  "autoload-dev": {
+    "psr-4": {"Open\\": "test/"}
+  },
+  "config": {
+    "optimize-autoloader": true
+  },
+  "keywords": [
+    "executable",
+    "file",
+    "launcher",
+    "open",
+    "start",
+    "url"
+  ],
+  "require": {
+    "php": ">=7.2.0"
+  },
+  "require-dev": {
+    "cedx/phpunit-expect": "^0.8.0",
+    "consolidation/robo": "^1.4.10",
+    "henrikbjorn/lurker": "^1.2.0",
+    "phpstan/phpstan": "^0.11.16"
+  },
+  "scripts": {
+    "coverage": "robo coverage",
+    "test": "robo test"
+  },
+  "support": {
+    "docs": "https://dev.belin.io/open.php/api",
+    "issues": "https://github.com/cedx/open.php/issues"
+  }
+}
