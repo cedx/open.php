@@ -8,6 +8,7 @@
     {"email": "cedric@belin.io", "homepage": "https://belin.io", "name": "Cédric Belin"}
   ],
   "autoload": {
+    "files": ["lib/functions.php"],
     "psr-4": {"Open\\": "lib/"}
   },
   "autoload-dev": {
@@ -25,7 +26,8 @@
     "url"
   ],
   "require": {
-    "php": ">=7.2.0"
+    "php": ">=7.2.0",
+    "ext-mbstring": "*"
   },
   "require-dev": {
     "cedx/phpunit-expect": "^0.8.0",
