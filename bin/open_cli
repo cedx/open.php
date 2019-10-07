@@ -1,0 +1,48 @@
+#!/usr/bin/env php
+<?php declare(strict_types=1);
+
+use Coveralls\Http\{Client};
+use GuzzleHttp\Psr7\{Uri};
+
+/**
+ * Application entry point.
+ * @return int The application exit code.
+ */
+function main(): int {
+  global $argv;
+
+  // Initialize the application.
+  @cli_set_process_title('Open.php');
+
+  // Parse the command line arguments.
+  $options = getopt('hv', ['help', 'version']);
+  $rest = array_values(array_filter(array_slice($argv, 1), function($arg) {
+    return mb_substr($arg, 0, 1) != '-';
+  }));
+
+  if (isset($options['h']) || isset($options['help'])) {
+    echo require __DIR__.'/../lib/Cli/usage.php', PHP_EOL;
+    return 0;
+  }
+
+  if (isset($options['v']) || isset($options['version'])) {
+    echo require __DIR__.'/../lib/Cli/version.g.php', PHP_EOL;
+    return 0;
+  }
+
+  // Run the program.
+  // TODO
+  return 0;
+}
+
+// Start the application.
+try {
+  $fileInfo = new SplFileInfo(__DIR__.'/../../../autoload.php');
+  require_once $fileInfo->isFile() ? $fileInfo->getPathname() : __DIR__.'/../vendor/autoload.php';
+  exit(main());
+}
+
+catch (Throwable $e) {
+  echo $e->getMessage(), PHP_EOL;
+  exit(1);
+}

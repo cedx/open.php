@@ -14,6 +14,9 @@
   "autoload-dev": {
     "psr-4": {"Open\\": "test/"}
   },
+  "bin": [
+    "bin/open_cli"
+  ],
   "config": {
     "optimize-autoloader": true
   },
