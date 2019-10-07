@@ -1,9 +1,6 @@
 #!/usr/bin/env php
 <?php declare(strict_types=1);
 
-use Coveralls\Http\{Client};
-use GuzzleHttp\Psr7\{Uri};
-
 /**
  * Application entry point.
  * @return int The application exit code.
