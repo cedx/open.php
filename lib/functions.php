@@ -4,6 +4,6 @@ namespace Open;
 /**
  * TODO
  */
-function open(): void {
+function open(string $target, array $options = []): void {
   // TODO
 }
