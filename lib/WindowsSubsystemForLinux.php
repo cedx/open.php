@@ -15,12 +15,12 @@ abstract class WindowsSubsystemForLinux {
   }
 
   /**
-   * TODO
-   * @param string $path
-   * @return string
+   * Resolves the specified WSL path to a Windows path.
+   * @param string $path A WSL path.
+   * @return string The Windows path corresponding to the specified WSL path.
    */
-  static function resolvePath(string $path): string {
-    // TODO
-    return '';
+  static function resolveWslPath(string $path): string {
+    $escapedPath = escapeshellarg($path);
+    return trim(`wsl -w $escapedPath`);
   }
 }
