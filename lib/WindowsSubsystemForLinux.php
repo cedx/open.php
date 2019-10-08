@@ -21,6 +21,6 @@ abstract class WindowsSubsystemForLinux {
    */
   static function resolveWslPath(string $path): string {
     $escapedPath = escapeshellarg($path);
-    return trim(`wsl -w $escapedPath`);
+    return trim(`wslpath -w $escapedPath`);
   }
 }
