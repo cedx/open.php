@@ -2,7 +2,7 @@
 namespace Open;
 
 /** Provides helper methods for the Windows Subsystem for Linux. */
-abstract class WindowsSubsystemForLinux {
+abstract class Wsl {
 
   /**
    * Gets a value indicating whether the process is running inside Windows Subsystem for Linux.
@@ -19,7 +19,7 @@ abstract class WindowsSubsystemForLinux {
    * @param string $path A WSL path.
    * @return string The Windows path corresponding to the specified WSL path.
    */
-  static function resolveWslPath(string $path): string {
+  static function resolvePath(string $path): string {
     $escapedPath = escapeshellarg($path);
     return trim(`wslpath -w $escapedPath`);
   }
