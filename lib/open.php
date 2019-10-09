@@ -31,7 +31,7 @@ function open(string $target, array $options = []): Process {
   }
   else if (PHP_OS_FAMILY == 'Windows' || $isWsl) {
     $command[] = $isWsl ? 'cmd.exe' : 'cmd';
-    array_push($command, '/c', 'start', '""', '/b');
+    array_push($command, '/c', 'start', '', '/b');
     if ($wait) $command[] = '/wait';
     if ($application) $command[] = $isWsl && mb_substr($application, 0, 5) == '/mnt/' ? Wsl::resolvePath($application) : $application;
     if ($arguments) array_push($command, ...$arguments);
