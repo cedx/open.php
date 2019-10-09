@@ -39,8 +39,8 @@ function main(): int {
   open($rest[0], [
     'application' => $options['a'] ?? $options['application'] ?? '',
     'arguments' => $index ? array_slice($argv, $index + 1) : [],
-    'background' => $options['b'] ?? $options['background'] ?? false,
-    'wait' => $options['w'] ?? $options['wait'] ?? false
+    'background' => isset($options['b']) || isset($options['background']),
+    'wait' => isset($options['w']) || isset($options['wait'])
   ]);
 
   return 0;

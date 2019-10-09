@@ -38,7 +38,7 @@ function open(string $target, array $options = []): Process {
     $command[] = str_replace('&', '^&', $target);
   }
   else {
-    $command[] = $options['application'] ?? 'xdg-open';
+    $command[] = $application ?: 'xdg-open';
     if ($arguments) array_push($command, ...$arguments);
     if (!$wait) $outputDisabled = true;
     $command[] = $target;
