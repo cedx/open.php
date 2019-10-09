@@ -12,14 +12,15 @@ use Symfony\Component\Process\Exception\{ProcessFailedException};
  * @throws ProcessFailedException If the process didn't terminate successfully.
  */
 function open(string $target, array $options = []): Process {
-  $command = [];
-  $isWsl = Wsl::isWsl();
-  $outputDisabled = false;
-
   $application = $options['application'] ?? '';
   $arguments = $options['arguments'] ?? [];
   $background = $options['background'] ?? false;
   $wait = $options['wait'] ?? false;
+
+  $command = [];
+  $isWsl = Wsl::isWsl();
+  $isWindows = PHP_OS_FAMILY == 'Windows' || $isWsl;
+  $outputDisabled = false;
 
   if (PHP_OS_FAMILY == 'Darwin') {
     $command[] = 'open';
@@ -29,7 +30,7 @@ function open(string $target, array $options = []): Process {
     $command[] = $target;
     if ($arguments) array_push($command, '--args', ...$arguments);
   }
-  else if (PHP_OS_FAMILY == 'Windows' || $isWsl) {
+  else if ($isWindows) {
     $command[] = 'cmd.exe';
     array_push($command, '/c', 'start', '', '/b');
     if ($wait) $command[] = '/wait';
@@ -44,7 +45,7 @@ function open(string $target, array $options = []): Process {
     $command[] = $target;
   }
 
-  $process = new Process($command);
+  $process = $isWindows ? Process::fromShellCommandline('TODO' /* TODO */) : new Process($command);
   if ($outputDisabled) $process->disableOutput();
   $process->setTimeout(null);
   $process->start();
