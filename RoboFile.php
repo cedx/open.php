@@ -80,6 +80,7 @@ class RoboFile extends Tasks {
    * @return Result The task result.
    */
   function test(): Result {
+    $this->say('The test results must be verified manually as there is no way to check that they actually opened anything.');
     return $this->_exec('phpunit --configuration=etc/phpunit.xml');
   }
 
