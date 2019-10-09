@@ -44,7 +44,6 @@ function open(string $target, array $options = []): Process {
     $command[] = $target;
   }
 
-  echo implode(' ', $command), PHP_EOL;
   $process = new Process($command);
   if ($outputDisabled) $process->disableOutput();
   $process->setTimeout(null);
