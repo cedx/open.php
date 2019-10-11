@@ -30,13 +30,17 @@ function main(): void {
 The function returns the spawned child process, an instance of the [`\Symfony\Component\Process\Process` class](https://symfony.com/doc/current/components/process.html).  
 You would normally not need to use this for anything, but it can be useful if you'd like to perform operations directly on the spawned process.
 
+!!! info
+    The function uses the command `start` on Windows, `open` on macOS
+    and `xdg-open` on other platforms.
+
 ## Options
 The behavior of the `Open\open()` function can be customized using the following options.
 
 ### string **application**
 Specify the application to open the target with.
 
-The application name is platform dependent. For example, Goole Chrome is `google chrome` on macOS, `google-chrome` on Linux and `chrome` on Windows.
+The application name is platform dependent. For example, Goole Chrome is `chrome` on Windows, `google-chrome` on Linux and `google chrome` on macOS.
 
 You may also pass in the application's full path. For example on Windows Subsystem for Linux, this can be `"/mnt/c/Program Files (x86)/Google/Chrome/Application/chrome.exe"`.
 
