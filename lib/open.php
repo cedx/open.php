@@ -2,14 +2,12 @@
 namespace Open;
 
 use Symfony\Component\Process\{Process};
-use Symfony\Component\Process\Exception\{ProcessFailedException};
 
 /**
  * Opens the specified target.
  * @param string $target The target to open.
  * @param array $options The options to apply.
  * @return Process The spawned child process.
- * @throws ProcessFailedException If the process didn't terminate successfully.
  */
 function open(string $target, array $options = []): Process {
   $application = $options['application'] ?? '';
