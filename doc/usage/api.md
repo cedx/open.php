@@ -49,7 +49,7 @@ You may also pass in the application's full path. For example on Windows Subsyst
 open('https://belin.io', ['application' => 'firefox']);
 ```
 
-### array **arguments** = `[]`
+### array **arguments**
 Specify the arguments to pass when using a custom `application` option.
 
 ```php
@@ -57,7 +57,7 @@ Specify the arguments to pass when using a custom `application` option.
 open('https://belin.io', ['application' => 'chrome', 'arguments' => ['--incognito']]);
 ```
 
-### bool **background** = `false`
+### bool **background**
 Do not bring the application to the foreground (macOS only).
 
 ```php
@@ -65,7 +65,7 @@ Do not bring the application to the foreground (macOS only).
 open('spreadsheet.xlsx', ['background' => true]);
 ```
 
-### bool **wait** = `false`
+### bool **wait**
 Wait for the opened application to exit before proceeding to the next statement. If `false`, immediately goes to the next statement after opening the application.
 
 ```php
