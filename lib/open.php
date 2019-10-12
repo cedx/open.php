@@ -37,7 +37,8 @@ function open(string $target, array $options = []): Process {
     $command[] = str_replace('&', '^&', escapeshellarg($target));
   }
   else {
-    $command[] = $application ?: 'xdg-open';
+    $localXdgOpen = realpath(__DIR__.'/../bin/xdg-open');
+    $command[] = $application ?: (is_executable($localXdgOpen) ? $localXdgOpen : 'xdg-open');
     if ($arguments) array_push($command, ...$arguments);
     if (!$wait) $outputDisabled = true;
     $command[] = $target;
