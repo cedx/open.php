@@ -5,7 +5,7 @@ Before installing **Open.php**, you need to make sure you have [PHP](https://www
 and [Composer](https://getcomposer.org), the PHP package manager, up and running.
 
 !!! warning
-    Open.php requires PHP >= **7.2.0**.
+    Open.php requires PHP >= **7.4.0**.
 
 You can verify if you're already good to go with the following commands:
 
