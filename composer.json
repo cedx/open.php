@@ -29,7 +29,7 @@
     "url"
   ],
   "require": {
-    "php": ">=7.2.0",
+    "php": ">=7.4.0",
     "ext-mbstring": "*",
     "symfony/process": "^4.3.5"
   },
