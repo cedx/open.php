@@ -16,16 +16,27 @@ Then use it to open a document or URL:
 ```shell
 $ open_cli --help
 
-Open whatever you want, such as URLs, files or executables, regardless of the platform you use.
+Description:
+  Open whatever you want, such as URLs, files or executables, regardless of the platform you use.
 
-Usage: open_cli [options] <target> [-- <arguments>]
+Usage:
+  open [options] [--] <target> [<arguments>...]
+
+Arguments:
+  target                         The target to open
+  arguments                      The arguments of the application to open the target with
 
 Options:
--a, --application    The application to open the target with.
--b, --background     Do not bring the application to the foreground (macOS).
--h, --help           Output usage information.
--v, --version        Output the version number.
--w, --wait           Wait for the opened application to exit.
+  -a, --application=APPLICATION  The application to open the target with
+  -b, --background               Do not bring the application to the foreground (macOS)
+  -w, --wait                     Wait for the opened application to exit
+  -h, --help                     Display this help message
+  -q, --quiet                    Do not output any message
+  -V, --version                  Display this application version
+      --ansi                     Force ANSI output
+      --no-ansi                  Disable ANSI output
+  -n, --no-interaction           Do not ask any interactive question
+  -v|vv|vvv, --verbose           Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug
 ```
 
 For example:

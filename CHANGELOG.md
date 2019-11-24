@@ -1,5 +1,9 @@
 # Changelog
 
+## Version [2.1.0](https://github.com/cedx/open.php/compare/v2.0.0...v2.1.0)
+- Relaxed the version constraint of the [Symfony](https://symfony.com) packages.
+- Using [Symfony Console](https://symfony.com/doc/current/console.html) for the command line interface.
+
 ## Version [2.0.0](https://github.com/cedx/open.php/compare/v1.1.0...v2.0.0)
 - Breaking change: raised the required [PHP](https://www.php.net) version.
 - Breaking change: using PHP 7.4 features, like arrow functions.
