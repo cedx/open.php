@@ -29,7 +29,9 @@ class Command extends \Symfony\Component\Console\Command\Command
    * @return int The exit code.
    */
   protected function execute(InputInterface $input, OutputInterface $output): int {
-    open($input->getArgument('target'), [
+    /** @var string $target */
+    $target = $input->getArgument('target');
+    open($target, [
       'application' => $input->getOption('application') ?? '',
       'arguments' => $input->getArgument('arguments'),
       'background' => $input->getOption('background'),
