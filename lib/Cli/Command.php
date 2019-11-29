@@ -6,8 +6,8 @@ use Symfony\Component\Console\Output\{OutputInterface};
 use function Open\{open};
 
 /** The console command. */
-class Command extends \Symfony\Component\Console\Command\Command
-{
+class Command extends \Symfony\Component\Console\Command\Command {
+  
   /** @var string The command name. */
   protected static $defaultName = 'open';
 
