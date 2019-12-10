@@ -1,6 +1,5 @@
 parameters:
+  checkMissingIterableValueType: false
+  ignoreErrors: ['/on a separate line does not do anything/']
   level: max
   paths: [../lib, ../test]
-  ignoreErrors:
-    - '/no value type specified in iterable type/'
-    - '/on a separate line does not do anything/'
