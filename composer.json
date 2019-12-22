@@ -31,8 +31,8 @@
   "require": {
     "php": ">=7.4.0",
     "ext-mbstring": "*",
-    "symfony/console": "^4.4.1 || ^5.0.1",
-    "symfony/process": "^4.4.1 || ^5.0.1"
+    "symfony/console": "^4.4.2 || ^5.0.2",
+    "symfony/process": "^4.4.2 || ^5.0.2"
   },
   "require-dev": {
     "cedx/phpunit-expect": "^0.9.0",
