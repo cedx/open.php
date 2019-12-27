@@ -18,7 +18,7 @@ class Command extends \Symfony\Component\Console\Command\Command {
       ->addArgument('target', InputArgument::REQUIRED, 'The target to open')
       ->addArgument('arguments', InputArgument::OPTIONAL | InputArgument::IS_ARRAY, 'The arguments of the application to open the target with')
       ->addOption('application', 'a', InputOption::VALUE_REQUIRED, 'The application to open the target with')
-      ->addOption('background', 'b', InputOption::VALUE_NONE, 'Do not bring the application to the foreground (macOS)')
+      ->addOption('background', 'b', InputOption::VALUE_NONE, 'Do not bring the application to the foreground (macOS only)')
       ->addOption('wait', 'w', InputOption::VALUE_NONE, 'Wait for the opened application to exit');
   }
 

@@ -28,7 +28,7 @@ Arguments:
 
 Options:
   -a, --application=APPLICATION  The application to open the target with
-  -b, --background               Do not bring the application to the foreground (macOS)
+  -b, --background               Do not bring the application to the foreground (macOS only)
   -w, --wait                     Wait for the opened application to exit
   -h, --help                     Display this help message
   -q, --quiet                    Do not output any message
