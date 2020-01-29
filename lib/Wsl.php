@@ -20,6 +20,7 @@ abstract class Wsl {
    * @return string The Windows path corresponding to the specified WSL path.
    */
   static function resolvePath(string $path): string {
+    assert(mb_strlen($path) > 0);
     $escapedPath = escapeshellarg($path);
     return trim(`wslpath -w $escapedPath`);
   }
