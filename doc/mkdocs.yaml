@@ -3,7 +3,7 @@ site_description: Open whatever you want in PHP, such as URLs, files or executab
 site_author: Cédric Belin - cedric@belin.io
 site_url: https://dev.belin.io/open.php
 
-docs_dir: ../doc
+docs_dir: .
 site_dir: ../web
 
 repo_name: GitHub
