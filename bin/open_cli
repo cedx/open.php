@@ -1,8 +1,8 @@
 #!/usr/bin/env php
 <?php declare(strict_types=1);
 
-use Symfony\Component\Console\{Application};
 use Open\Cli\{Command};
+use Symfony\Component\Console\{Application};
 
 // Load the dependencies.
 $autoload = realpath(__DIR__.'/../../../autoload.php');
