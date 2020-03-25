@@ -1,5 +1,8 @@
 # Changelog
 
+## Version [2.2.0](https://github.com/cedx/open.php/compare/v2.1.0...v2.2.0)
+- Updated the package dependencies.
+
 ## Version [2.1.0](https://github.com/cedx/open.php/compare/v2.0.0...v2.1.0)
 - Relaxed the version constraint of the [Symfony](https://symfony.com) packages.
 - Using [Symfony Console](https://symfony.com/doc/current/components/console.html) for the command line interface.
