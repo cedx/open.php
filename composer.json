@@ -34,8 +34,8 @@
   "require": {
     "php": ">=7.4.0",
     "ext-mbstring": "*",
-    "symfony/console": "^4.4.6 || ^5.0.5",
-    "symfony/process": "^4.4.6 || ^5.0.5"
+    "symfony/console": "^4.4.6 || ^5.0.6",
+    "symfony/process": "^4.4.6 || ^5.0.6"
   },
   "require-dev": {
     "consolidation/robo": "^2.0.3",
