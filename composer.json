@@ -8,8 +8,8 @@
     {"email": "cedric@belin.io", "homepage": "https://belin.io", "name": "Cédric Belin"}
   ],
   "autoload": {
-    "files": ["lib/open.php"],
-    "psr-4": {"Open\\": "lib/"}
+    "files": ["src/open.php"],
+    "psr-4": {"Open\\": "src/"}
   },
   "autoload-dev": {
     "psr-4": {"Open\\": "test/"}
