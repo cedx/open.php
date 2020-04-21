@@ -11,7 +11,9 @@ abstract class Wsl {
   static function isWsl(): bool {
     if (PHP_OS_FAMILY != 'Linux') return false;
     if (mb_stripos(php_uname(), 'microsoft')) return true;
-    return (bool) mb_stripos((string) @file_get_contents('/proc/version'), 'microsoft');
+
+    $procFile = new \SplFileObject('/proc/version');
+    return (bool) mb_stripos((string) $procFile->fread($procFile->getSize()), 'microsoft');
   }
 
   /**
