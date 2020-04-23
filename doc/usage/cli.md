@@ -1,5 +1,7 @@
-path: blob/master
+---
+path: src/branch/master
 source: bin/open_cli
+---
 
 # Command line interface
 From a command prompt, install the `open_cli` executable:

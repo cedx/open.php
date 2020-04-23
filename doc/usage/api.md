@@ -1,5 +1,7 @@
-path: blob/master
+---
+path: src/branch/master
 source: src/open.php
+---
 
 # Application programming interface
 This package provides a single function, `Open\open()`, allowing to open a document or URL:
