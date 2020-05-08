@@ -43,7 +43,6 @@
     "phpunit/phpunit": "^9.1.4"
   },
   "scripts": {
-    "coverage": "coveralls var/coverage.xml",
     "test": "phpunit --configuration=etc/phpunit.xml"
   },
   "support": {
