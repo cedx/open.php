@@ -1,52 +1,52 @@
 {
-  "description": "Open whatever you want, such as URLs, files or executables, regardless of the platform you use.",
-  "homepage": "https://docs.belin.io/open.php",
-  "license": "MIT",
-  "name": "cedx/open",
-  "type": "library",
-  "version": "2.3.0",
-  "authors": [
-    {"email": "cedric@belin.io", "homepage": "https://belin.io", "name": "Cédric Belin"}
-  ],
-  "autoload": {
-    "files": ["src/open.php"],
-    "psr-4": {"Open\\": "src/"}
-  },
-  "autoload-dev": {
-    "psr-4": {"Open\\": "test/"}
-  },
-  "bin": [
-    "bin/open_cli"
-  ],
-  "config": {
-    "optimize-autoloader": true
-  },
-  "funding": [
-    {"type": "patreon", "url": "https://www.patreon.com/cedx"}
-  ],
-  "keywords": [
-    "executable",
-    "file",
-    "launcher",
-    "open",
-    "start",
-    "url"
-  ],
-  "require": {
-    "php": ">=7.4.0",
-    "ext-mbstring": "*",
-    "symfony/console": "^5.0.8",
-    "symfony/process": "^5.0.8"
-  },
-  "require-dev": {
-    "phpstan/phpstan": "^0.12.25",
-    "phpunit/phpunit": "^9.1.4"
-  },
-  "scripts": {
-    "test": "phpunit --configuration=etc/phpunit.xml"
-  },
-  "support": {
-    "docs": "https://api.belin.io/open.php",
-    "issues": "https://git.belin.io/cedx/open.php/issues"
-  }
+	"description": "Open whatever you want, such as URLs, files or executables, regardless of the platform you use.",
+	"homepage": "https://docs.belin.io/open.php",
+	"license": "MIT",
+	"name": "cedx/open",
+	"type": "library",
+	"version": "2.3.0",
+	"authors": [
+		{"email": "cedric@belin.io", "homepage": "https://belin.io", "name": "Cédric Belin"}
+	],
+	"autoload": {
+		"files": ["src/open.php"],
+		"psr-4": {"Open\\": "src/"}
+	},
+	"autoload-dev": {
+		"psr-4": {"Open\\": "test/"}
+	},
+	"bin": [
+		"bin/open_cli"
+	],
+	"config": {
+		"optimize-autoloader": true
+	},
+	"funding": [
+		{"type": "patreon", "url": "https://www.patreon.com/cedx"}
+	],
+	"keywords": [
+		"executable",
+		"file",
+		"launcher",
+		"open",
+		"start",
+		"url"
+	],
+	"require": {
+		"php": ">=7.4.0",
+		"ext-mbstring": "*",
+		"symfony/console": "^5.0.8",
+		"symfony/process": "^5.0.8"
+	},
+	"require-dev": {
+		"phpstan/phpstan": "^0.12.25",
+		"phpunit/phpunit": "^9.1.4"
+	},
+	"scripts": {
+		"test": "phpunit --configuration=etc/phpunit.xml"
+	},
+	"support": {
+		"docs": "https://api.belin.io/open.php",
+		"issues": "https://git.belin.io/cedx/open.php/issues"
+	}
 }

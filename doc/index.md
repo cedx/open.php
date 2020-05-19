@@ -6,7 +6,7 @@ Open whatever you want in [PHP](https://www.php.net), such as URLs, files or exe
 ## Quick start
 Install the latest version of **Open.php** with [Composer](https://getcomposer.org):
 
-```shell
+``` shell
 composer require cedx/open
 ```
 
