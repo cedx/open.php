@@ -43,6 +43,7 @@
 		"phpunit/phpunit": "^9.2.1"
 	},
 	"scripts": {
+		"lint": "phpstan analyse --configuration=etc/phpstan.neon",
 		"test": "phpunit --configuration=etc/phpunit.xml"
 	},
 	"support": {
