@@ -1,7 +1,7 @@
 <?php declare(strict_types=1);
 namespace Open;
 
-use Symfony\Component\Process\{Process};
+use Symfony\Component\Process\Process;
 
 /**
  * Opens the specified target.

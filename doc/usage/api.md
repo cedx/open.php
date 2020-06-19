@@ -8,7 +8,7 @@ This package provides a single function, `Open\open()`, allowing to open a docum
 
 ``` php
 <?php
-use function Open\{open};
+use function Open\open;
 
 function main(): void {
 	// Open a URL in the default browser.

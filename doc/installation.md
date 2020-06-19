@@ -32,7 +32,7 @@ Now in your [PHP](https://www.php.net) code, you can use:
 
 ``` php
 <?php
-use function Open\{open};
+use function Open\open;
 ```
 
 See the [usage information](usage/api.md).
