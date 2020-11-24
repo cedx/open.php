@@ -39,7 +39,7 @@
 		"symfony/process": "^5.1.8"
 	},
 	"require-dev": {
-		"phpstan/phpstan": "^0.12.55",
+		"phpstan/phpstan": "^0.12.57",
 		"phpunit/phpunit": "^9.4.3"
 	},
 	"scripts": {
