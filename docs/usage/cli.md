@@ -1,21 +1,15 @@
----
-path: src/branch/main
-source: bin/open_cli
----
-
 # Command line interface
 From a command prompt, install the `open_cli` executable:
 
-``` shell
+```shell
 composer global require cedx/open
 ```
 
-!!! tip
-	Consider adding the [`composer global`](https://getcomposer.org/doc/03-cli.md#global) executables directory to your system path.
+?> Consider adding the `composer global` executables directory to your system path.
 
 Then use it to open a document or URL:
 
-``` shell
+```shell
 $ open_cli --help
 
 Description:
@@ -43,7 +37,7 @@ Options:
 
 For example:
 
-``` shell
+```shell
 # Open a URL in the default browser.
 open_cli https://belin.io
 
