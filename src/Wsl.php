@@ -6,7 +6,7 @@ abstract class Wsl {
 
 	/**
 	 * Gets a value indicating whether the process is running inside Windows Subsystem for Linux.
-	 * @return bool `true` if the process is running inside Windows Subsystem for Linux, otherwise `false`.
+	 * @return `true` if the process is running inside Windows Subsystem for Linux, otherwise `false`.
 	 */
 	static function isWsl(): bool {
 		if (PHP_OS_FAMILY != "Linux") return false;
@@ -18,8 +18,8 @@ abstract class Wsl {
 
 	/**
 	 * Resolves the specified WSL path to a Windows path.
-	 * @param string $path A WSL path.
-	 * @return string The Windows path corresponding to the specified WSL path.
+	 * @param $path A WSL path.
+	 * @return The Windows path corresponding to the specified WSL path.
 	 */
 	static function resolvePath(string $path): string {
 		$escapedPath = escapeshellarg($path);

@@ -24,9 +24,9 @@ class Command extends \Symfony\Component\Console\Command\Command {
 
 	/**
 	 * Executes the current command.
-	 * @param InputInterface $input The input arguments and options.
-	 * @param OutputInterface $output The console output.
-	 * @return int The exit code.
+	 * @param $input The input arguments and options.
+	 * @param $output The console output.
+	 * @return The exit code.
 	 */
 	protected function execute(InputInterface $input, OutputInterface $output): int {
 		/** @var string $target */
