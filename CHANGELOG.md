@@ -1,5 +1,11 @@
 # Changelog
 
+## Version [3.0.0](https://git.belin.io/cedx/open.php/compare/v2.3.0...v3.0.0)
+- Breaking change: raised the required [PHP](https://www.php.net) version.
+- Ported the documentation to [docsify](https://docsify.js.org).
+- Replaced the build system based on [Robo](https://robo.li) by [PowerShell](https://docs.microsoft.com/en-us/powershell) scripts.
+- Updated the package dependencies.
+
 ## Version [2.3.0](https://git.belin.io/cedx/open.php/compare/v2.2.0...v2.3.0)
 - Updated the documentation.
 - Updated the package dependencies.
