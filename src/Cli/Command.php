@@ -22,12 +22,7 @@ class Command extends \Symfony\Component\Console\Command\Command {
 			->addOption("wait", "w", InputOption::VALUE_NONE, "Wait for the opened application to exit");
 	}
 
-	/**
-	 * Executes the current command.
-	 * @param $input The input arguments and options.
-	 * @param $output The console output.
-	 * @return The exit code.
-	 */
+	/** Executes the current command, and returns the exit code. */
 	protected function execute(InputInterface $input, OutputInterface $output): int {
 		/** @var string $target */
 		$target = $input->getArgument("target");

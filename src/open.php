@@ -3,12 +3,7 @@ namespace Open;
 
 use Symfony\Component\Process\Process;
 
-/**
- * Opens the specified target.
- * @param $target The target to open.
- * @param $options The options to apply.
- * @return The spawned child process.
- */
+/** Opens the specified target, and returns the spawned child process. */
 function open(string $target, array $options = []): Process {
 	$application = $options["application"] ?? "";
 	$arguments = $options["arguments"] ?? [];
