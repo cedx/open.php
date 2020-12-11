@@ -13,7 +13,7 @@ abstract class Wsl {
 		if (mb_stripos(php_uname(), "microsoft")) return true;
 
 		$procFile = new \SplFileObject("/proc/version");
-		return (bool) mb_stripos((string) $procFile->fread($procFile->getSize()), "microsoft");
+		return (bool) mb_stripos((string) $procFile->fread((int) $procFile->getSize()), "microsoft");
 	}
 
 	/**
@@ -22,7 +22,6 @@ abstract class Wsl {
 	 * @return string The Windows path corresponding to the specified WSL path.
 	 */
 	static function resolvePath(string $path): string {
-		assert(mb_strlen($path) > 0);
 		$escapedPath = escapeshellarg($path);
 		return trim(`wslpath -w $escapedPath`);
 	}

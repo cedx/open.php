@@ -10,8 +10,6 @@ use Symfony\Component\Process\Process;
  * @return Process The spawned child process.
  */
 function open(string $target, array $options = []): Process {
-	assert(mb_strlen($target) > 0);
-
 	$application = $options["application"] ?? "";
 	$arguments = $options["arguments"] ?? [];
 	$background = $options["background"] ?? false;
