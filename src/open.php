@@ -7,7 +7,7 @@ use Symfony\Component\Process\Process;
  * Opens the specified target.
  * @param string $target The target to open.
  * @param array<string, mixed> $options The options to apply.
- * @return Process The spawned child process.
+ * @return Process<string> The spawned child process.
  */
 function open(string $target, array $options = []): Process {
 	$application = $options["application"] ?? "";
