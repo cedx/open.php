@@ -1,4 +1,4 @@
 # See also
-- [API reference](https://api.belin.io/open.php)
+- [API reference](https://cedx.github.io/open.php/api)
 - [Packagist package](https://packagist.org/packages/cedx/open)
-- [Submit an issue](https://git.belin.io/cedx/open.php/issues)
+- [Submit an issue](https://github.com/cedx/open.php/issues)

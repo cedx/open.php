@@ -1,6 +1,6 @@
 {
 	"description": "Open whatever you want, such as URLs, files or executables, regardless of the platform you use.",
-	"homepage": "https://docs.belin.io/open.php",
+	"homepage": "https://cedx.github.io/open.php",
 	"license": "MIT",
 	"name": "cedx/open",
 	"type": "library",
@@ -53,7 +53,7 @@
 		"watch": "pwsh tool/watch.ps1"
 	},
 	"support": {
-		"docs": "https://api.belin.io/open.php",
-		"issues": "https://git.belin.io/cedx/open.php/issues"
+		"docs": "https://cedx.github.io/open.php/api",
+		"issues": "https://github.com/cedx/open.php/issues"
 	}
 }
